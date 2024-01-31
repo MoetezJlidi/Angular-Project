@@ -1,0 +1,23 @@
+// Custom SCSS for Auth Component
+.auth {
+  .btn {
+      font-family: 'Arial', sans-serif; // Using Arial as a default font
+      text-transform: uppercase;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+
+      &.btn-success {
+          background-color: #2ecc71; // Vibrant green for success
+          &:hover {
+              background-color: darken(#2ecc71, 10%);
+          }
+      }
+
+      &.btn-danger {
+          background-color: #e74c3c; // Strong red for danger
+          &:hover {
+              background-color: darken(#e74c3c, 10%);
+          }
+      }
+  }
+}

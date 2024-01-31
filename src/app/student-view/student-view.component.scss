@@ -1,0 +1,41 @@
+.student-view {
+  h2 {
+
+      margin-bottom: 15px;
+  }
+
+
+
+  .list-group {
+      padding: 0;
+      list-style: none;
+
+      li {
+
+          padding: 10px;
+          margin-bottom: 5px;
+
+          &.list-group-item-success {
+              background-color: green;
+              color: white;
+          }
+
+          &.list-group-item-danger {
+              background-color: red;
+              color: white;
+          }
+
+
+      }
+  }
+
+  .btn {
+
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+
+
+  }
+}

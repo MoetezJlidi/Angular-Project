@@ -1,0 +1,73 @@
+// Enhanced Styles
+$primary-color: #3498db; // Primary color for the links
+$active-color: #2ecc71; // Color for the active link
+$hover-color: #2980b9; // Color for hover state
+$font-stack: 'Arial', sans-serif; // Font stack
+$shadow-color: rgba(0, 0, 0, 0.1); // Shadow color
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; // This makes sure the container takes the full viewport height
+
+  .auth-box {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 300px; // Adjust the width as needed
+      background-color: white;
+      text-align: center;
+  }
+}
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.col-xs-12 {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+  transition: transform 0.3s; // Smooth transition for transform
+
+  &:hover {
+    transform: translateY(-2px); // Slightly raises the list item on hover
+    background-color: $hover-color; // Changes background on hover
+    border-radius: 4px; // Rounded corners for the list items
+    a {
+      color: #fff; // White text color on hover
+    }
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    font-family: $font-stack;
+    padding: 10px 15px; // Padding for better click area
+    display: block; // Makes the entire list item clickable
+    transition: color 0.3s;
+  }
+}
+
+.active {
+  background-color: $active-color;
+  border-radius: 4px;
+  a {
+    color: #fff; // White text color for active link
+    font-weight: bold;
+  }
+}
+
+// Add any additional styles as needed...
